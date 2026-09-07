@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "StudyOS",
+    "slug": "studyos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E5E8EB"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cham.studyos"
+    },
+    "android": {
+      "package": "com.cham.studyos",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "ACTIVITY_RECOGNITION",
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "일정을 가져오기 위해 캘린더 권한이 필요합니다."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "만보기 기능을 위해 활동 감지 권한이 필요합니다."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8c638500-2bc9-4916-84c9-a9488f6e49cc"
+      }
+    }
+  }
+}
